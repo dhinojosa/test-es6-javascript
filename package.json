@@ -1,22 +1,23 @@
 {
-  "name": "test-es6-javascript",
-  "version": "1.0.0",
-  "description": "A JavaScript Project",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "keywords": [
-    "JavaScript",
-    "Testing",
-    "Jest"
-  ],
-  "author": "= <=>",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.16.8",
-    "@babel/core": "^7.16.12",
-    "@babel/preset-env": "^7.16.11",
-    "jest": "^27.4.7"
-  }
+    "name": "test-es6-javascript",
+    "version": "1.0.0",
+    "description": "A JavaScript Project",
+    "main": "src/index.js",
+    "type": "module",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [
+        "JavaScript",
+        "Testing",
+        "Jest"
+    ],
+    "author": "= <=>",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.16.8",
+        "@babel/core": "^7.16.12",
+        "@babel/preset-env": "^7.16.11",
+        "jest": "^27.4.7"
+    }
 }
