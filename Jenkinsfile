@@ -1,27 +1,25 @@
 pipeline {
   agent any
 
-  tools {nodejs "node"}
+  tools {nodejs "Node 17.4.0"}
 
   stages {
-
-    stage('Git') {
+    stage('Checkout') {
       steps {
-        git 'https://github.com/****/****'
+        checkout scm
       }
     }
 
     stage('Build') {
       steps {
         sh 'npm install'
-         sh '<<Build Command>>'
       }
     }
 
 
     stage('Test') {
       steps {
-        sh 'node test'
+        sh 'npm run test'
       }
     }
   }
